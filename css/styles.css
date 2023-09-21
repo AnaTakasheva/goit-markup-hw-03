@@ -5,10 +5,51 @@ body {
     
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 ul {
     list-style-type: none;
 }
+    /* навігація */
+
+.conteiner-header {
+    display: flex;
+    gap: 332px;
+    justify-content: space-around;
+    padding-top: 24px;
+    padding-bottom: 24px;
     
+}
+
+.nav {
+    display: flex;
+    gap: 76px;
+}
+
+.cont-list-link {
+    display: flex;
+    gap: 40px;
+}
+
+.cont-adress {
+    display: flex;
+    gap: 40px;
+}
 
 .logo {
     color:#4D5AE5;
@@ -75,9 +116,21 @@ ul {
     color: #404BBF;
 }
 
-
+ /* ПЕРШИЙ БЛОК */
 .section-title {
     background:#2E2F42;
+}
+
+.cont-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
+    
 }
 
 .title {
@@ -89,8 +142,22 @@ ul {
     line-height: 60px;
     letter-spacing: 1.12px;
     line-height: 1.07;
+    width: 496px;
+    height: 120px;
+    
+    
 }
 .button {
+    
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    display: inline-flex;
+       
+        align-items: flex-start;
+        gap: 10px;
+    
+
     background:#4D5AE5;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
@@ -107,6 +174,7 @@ ul {
     background:#404BBF;
 }
 
+/* ДРУГИЙ БЛОК БЕЗ НАЗВИ*/
 .features-title {
     color:#2E2F42;
     font-size: 20px;
@@ -120,6 +188,8 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* КОМАНДА */
 .section-team {
     background:#F4F4FD;
 }
@@ -134,6 +204,13 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     
+}
+
+.conteiner-team {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
 }
 
 .team-member-card {
@@ -158,6 +235,7 @@ ul {
     letter-spacing: 0.02em;
 }
 
+/*ПОРТФОЛІО*/
 .portfolio-title {
     color: #2E2F42;
     text-align: center;
@@ -168,6 +246,13 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
+}
+
+.conteiner-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
 }
 
 .portfolio-type {
@@ -183,7 +268,7 @@ ul {
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
-
+ /* ФУТЕР */
 .footer {
     background:#2E2F42;
 }
