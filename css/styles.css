@@ -31,17 +31,19 @@ ul {
 }
     /* навігація */
 .header {
+    padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
 }
 
 .container-header {
     display: flex;
+    justify-content: space-evenly;
     
 }
 
 .container-header.container,
 .container {
-    width: 1128px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -135,20 +137,8 @@ ul {
     background:#2E2F42;
     padding: 188px 0;
 }
-
-/*.cont-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
-    
-}*/
-
 .title {
+    margin-bottom: 48px;
     color: #FFF;
     text-align: center;
     font-size: 56px;
@@ -157,22 +147,17 @@ ul {
     line-height: 60px;
     letter-spacing: 1.12px;
     line-height: 1.07;
-    width: 496px;
+    max-width: 496px;
     height: 120px;
-    
-    
 }
 .button {
+    text-align: center;
     display: block;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px; /*Для кнопки ми дивимося по макету і беремо найменшу кнопку,
+        щоб всі інші якщо в них різний контент були однаковою шириною*/
     height: 56px;
     border: none;
-    
-       
-        /*align-items: flex-start;
-        gap: 10px;*/
-    
     border-radius: 4px;
     background:#4D5AE5;
     cursor: pointer;
@@ -182,9 +167,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color:#ffffff;
-
 }
-
 .button:focus,
 .button:hover {
     background:#404BBF;
@@ -203,9 +186,10 @@ ul {
     margin: -1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
-    clip-path: inset (100%);
-    clip: rect 0 0 0 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
